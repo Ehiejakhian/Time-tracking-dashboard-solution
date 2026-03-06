@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Ehiejakhian/Time-tracking-dashboard-solution](https://github.com/Ehiejakhian/Time-tracking-dashboard-solution)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://ehiejakhian.github.io/Time-tracking-dashboard-solution/](https://ehiejakhian.github.io/Time-tracking-dashboard-solution/)
 
 ## My process
 I usually start by writing my creating my project structure. I have a template model I work on to create my files. And this is especially makes specifying file paths accurate for my compiled CSS from SCSS easy to write and understand.
