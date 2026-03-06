@@ -1,0 +1,50 @@
+@use '../util/' as *;
+
+.report__each {
+  border-radius: $br;
+  width: 100%;
+  &__img {
+    height: 40px;
+    overflow: hidden;
+    padding: 0 var(--card-padding);
+    @include df(right, center);
+    img {
+      transform: translateY(10px);
+    }
+  }
+  &__content {
+    border-radius: $br;
+    padding: var(--card-padding);
+    background: var(--card-bg);
+    color: #fff;
+    @include df(normal, normal, column, 10px);
+    .heading {
+      @include df(space-between, center, row, 10px);
+      h3 {
+        font-weight: 500;
+      }
+    }
+    .body {
+      @include df(space-between, center, row wrap, 10px);
+      h2 {
+        font-size: 2rem;
+        font-weight: 300;
+      }
+      span {
+        color: var(--previous);
+        font-size: 15px;
+      }
+      @media (min-width: $desktop) {
+        @include df(normal, start, column, 10px);
+        h2 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+  @each $name, $color in $colors {
+    &.#{$name} {
+      background: $color;
+    }
+  }
+}

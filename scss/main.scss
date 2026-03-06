@@ -1,0 +1,13 @@
+@use './util/' as *;
+@use './components/' as *;
+
+.attribution { 
+  color: var(--previous);
+  font-size: 11px;
+  text-align: center; 
+  & a { 
+    color: var(--hero-bg);
+    text-decoration: none;
+    border-bottom: 2px solid;
+  }
+}

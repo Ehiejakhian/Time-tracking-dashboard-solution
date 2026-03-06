@@ -1,0 +1,37 @@
+
+@use '../util/' as *;
+
+main {
+  width: 100%;
+  max-width: calc(var(--card-size)*4 + 60px);
+  @include df(normal, normal, row wrap, 20px);
+  @media (min-width: $tab) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--card-size), 1fr));
+    .hero {
+      grid-column: 1/-1;
+    }
+    .report {
+      grid-column: 1/-1;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  @media (min-width: $desktop) {
+    .hero {
+      grid-column: 1/2;
+    }
+    .report {
+      grid-column: 2/-1;
+    }
+  }
+}
+
+.report {
+  width: 100%;
+  @include df(normal, normal, row wrap, 20px);
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(var(--card-size), 1fr));
+  }
+}

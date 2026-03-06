@@ -1,0 +1,17 @@
+@use './vars' as *;
+@use './mixins' as *;
+
+*,*::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'rubik';
+  font-size: var(--font-size);
+  padding: 20px var(--side-padding);
+  background: var(--bg);
+  min-height: 100dvh;
+  @include df(center, center, column, 20px);
+}

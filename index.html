@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"/>
+  <title>Frontend Mentor | Time tracking dashboard by Ehi Ejakhian</title>
+  <link rel="stylesheet" href="./scss/css/main.css"/>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero__person">
+        <img src="./assets/images/image-jeremy.png" alt="jeremy"/>
+        <div class="hero__person__text">
+          <span>Report for</span>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      <ul>
+        <li><button>Daily</button></li>
+        <li><button class="active">Weekly</button></li>
+        <li><button>Monthly</button></li>
+      </ul>
+    </section>
+
+    <section class="report">
+      <div class="report__each">
+        <div class="report__each__img">
+          <img src="./assets/images/icon-work.svg" alt="work icon"/>
+        </div>
+        <div class="report__each__content">
+          <div class="heading">
+            <h3>Work</h3>
+            <img src="./assets/images/icon-ellipsis.svg" alt="ellipsis icon"/>
+          </div>
+          <div class="body">
+            <h2>32hrs</h2>
+            <span>Last Week - 36hrs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://ehiejakhian.github.io/">Ehi Ejakhain</a>.
+  </div>
+
+  <!-- TEMPLATE -->
+  <template id="card">
+    <div class="report__each">
+      <div class="report__each__img">
+        <img src="./assets/images/icon-work.svg" alt="work icon"/>
+      </div>
+      <div class="report__each__content">
+        <div class="heading">
+          <h3>Work</h3>
+          <img src="./assets/images/icon-ellipsis.svg" alt="ellipsis icon"/>
+        </div>
+        <div class="body">
+          <h2>32hrs</h2>
+          <span>Last Week - 36hrs</span>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script src="./scripts/main.js" type="module"></script>
+  <script type="module" src="./scripts/switch.js" defer></script>
+</body>
+</html>
